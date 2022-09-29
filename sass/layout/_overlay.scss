@@ -1,7 +1,6 @@
 .overlay {
   width: 100%;
-  max-width: 1360px;
-  max-height: 768px;
+
   left: 0px;
   top: 0px;
   margin-left: auto;
@@ -13,9 +12,40 @@
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 320px) {
+  .overlay {
+    max-width: 320px;
+    max-height: 533px;
+    background-image: url("../../img/mobile/rectangle1x.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .overlay {
+    background-image: url("../../img/mobile/rectangle@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 768px;
+    max-height: 1024px;
+    background-image: url("../img/tablet/rectangle1x.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .overlay {
+    background-image: url("../img/tablet/rectangle@2x.jpg");
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .overlay {
+    max-width: 1360px;
+    max-height: 768px;
     background-image: url("../img/land/Rectangle1x.jpg");
   }
 }

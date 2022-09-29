@@ -1,0 +1,39 @@
+.managers__container {
+  display: flex;
+}
+.managers {
+}
+.managers__box {
+  padding: 84px 0;
+  padding-left: 30px;
+  padding-right: 44px;
+
+  background: #28a745;
+  border-radius: 0px;
+}
+.managers__subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+  /* identical to box height, or 165% */
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+.managers__title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 48px;
+  /* identical to box height, or 126% */
+
+  color: #ffffff;
+  margin-bottom: 26px;
+}
+.managers__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  color: #ffffff;
+  margin-bottom: 17px;
+}
