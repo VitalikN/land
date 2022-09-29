@@ -1,0 +1,29 @@
+.overlay {
+  width: 100%;
+  max-width: 1360px;
+  max-height: 768px;
+  left: 0px;
+  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 0px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    background-image: url("../img/land/Rectangle1x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .overlay {
+    background-image: url("../img/land/Rectangle@2x.jpg");
+  }
+}
