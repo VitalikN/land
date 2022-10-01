@@ -27,3 +27,8 @@
 .managers__btn {
   border: 1px solid #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .button {
+    @include font(16px, 400, 26px);
+  }
+}

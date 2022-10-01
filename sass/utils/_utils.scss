@@ -52,3 +52,9 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.section {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}

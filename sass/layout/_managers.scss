@@ -1,40 +1,83 @@
-.managers__container {
-  width: 100%;
-  max-width: 1360px;
-  height: 100%;
-  max-height: 460px;
-  padding: 0;
-}
+@media screen and (min-width: 320px) {
+  .managers__container {
+    width: 100%;
+    max-width: 320px;
 
-.managers__list {
-  display: flex;
-}
-.managers__item {
-  width: calc(100% / 2);
-  max-width: 680px;
-}
+    height: 100%;
+    padding: 0;
+  }
+  .managers__img {
+    width: 100%;
+  }
 
-.managers__box {
-  height: 100%;
-  padding: 84px 0;
-  padding-left: 30px;
-  padding-right: 44px;
+  .managers__box {
+    height: 100%;
+    padding: 30px;
 
-  background: #28a745;
-  border-radius: 0px;
+    background: #28a745;
+    border-radius: 0px;
+  }
+  .managers__subtitle {
+    @include font(18px, 400, 30px);
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+
+  .managers__title {
+    @include font(38px, 300, 48px);
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+
+  .managers__text {
+    @include font(16px, 400, 26px);
+    color: #ffffff;
+    margin-bottom: 14px;
+  }
 }
-.managers__subtitle {
-  @include font(20px, 400, 33px);
-  margin-bottom: 5px;
-  color: #ffffff;
+@media screen and (min-width: 768px) {
+  .managers__container {
+    max-width: 768px;
+  }
+  .managers__list {
+    display: flex;
+  }
+  .managers__item {
+    max-width: 384px;
+  }
+
+  .managers__box {
+    padding: 30px 0;
+    padding-left: 30px;
+    padding-right: 39px;
+  }
+
+  .managers__subtitle {
+    @include font(20px, 400, 33px);
+  }
+  .managers__title {
+    margin-bottom: 26px;
+  }
+  .managers__text {
+    @include font(18px, 400, 28px);
+    margin-bottom: 20px;
+  }
 }
-.managers__title {
-  @include font(38px, 300, 48px);
-  color: #ffffff;
-  margin-bottom: 26px;
-}
-.managers__text {
-  @include font(18px, 400, 28px);
-  color: #ffffff;
-  margin-bottom: 17px;
+@media screen and (min-width: 1360px) {
+  .managers__container {
+    max-width: 1360px;
+  }
+
+  .managers__item {
+    max-width: 680px;
+  }
+  .managers__box {
+    padding: 84px 0;
+    padding-left: 30px;
+    padding-right: 44px;
+  }
+
+  .managers__text {
+    margin-bottom: 17px;
+  }
 }
