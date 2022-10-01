@@ -24,28 +24,17 @@
   border-radius: 0px;
 }
 .managers__subtitle {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 33px;
-  /* identical to box height, or 165% */
+  @include font(20px, 400, 33px);
   margin-bottom: 5px;
   color: #ffffff;
 }
 .managers__title {
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 48px;
-  /* identical to box height, or 126% */
-
+  @include font(38px, 300, 48px);
   color: #ffffff;
   margin-bottom: 26px;
 }
 .managers__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-
+  @include font(18px, 400, 28px);
   color: #ffffff;
   margin-bottom: 17px;
 }

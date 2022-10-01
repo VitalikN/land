@@ -77,11 +77,10 @@ img {
     padding: 0 20px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1360px) {
   .container {
-    max-width: 1260px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1360px;
+    padding: 0;
   }
 }
 .button {
@@ -150,14 +149,14 @@ img {
     background-image: url("../img/tablet/rectangle@2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1360px) {
   .overlay {
     max-width: 1360px;
     max-height: 768px;
     background-image: url("../img/land/Rectangle1x.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1360px), screen and (min-resolution: 192dpi) and (min-width: 1360px), screen and (min-resolution: 2dppx) and (min-width: 1360px) {
   .overlay {
     background-image: url("../img/land/Rectangle@2x.jpg");
   }
@@ -353,28 +352,25 @@ img {
 }
 
 .managers__subtitle {
-  font-weight: 400;
   font-size: 20px;
-  line-height: 33px;
-  /* identical to box height, or 165% */
+  font-weight: 400;
+  line-height: 1.65;
   margin-bottom: 5px;
   color: #ffffff;
 }
 
 .managers__title {
-  font-weight: 300;
   font-size: 38px;
-  line-height: 48px;
-  /* identical to box height, or 126% */
+  font-weight: 300;
+  line-height: 1.2631578947;
   color: #ffffff;
   margin-bottom: 26px;
 }
 
 .managers__text {
-  font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
+  font-weight: 400;
+  line-height: 1.5555555556;
   color: #ffffff;
   margin-bottom: 17px;
 }/*# sourceMappingURL=main.css.map */
