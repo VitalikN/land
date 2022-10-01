@@ -4,6 +4,10 @@
   left: 597px;
   top: 436px;
 
+  @include font(18px, 400, 28px);
+
+  color: #ffffff;
+  background: #28a745;
   border-radius: 5px;
 }
 
@@ -12,12 +16,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  @include font(18px, 400, 28px);
 
   margin: 0 auto;
-
-  color: #ffffff;
-  background: #28a745;
   border: none;
 }
 .btn__icon {
@@ -26,5 +26,4 @@
 
 .managers__btn {
   border: 1px solid #ffffff;
-  border-radius: 5px;
 }

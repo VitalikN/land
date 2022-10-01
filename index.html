@@ -113,45 +113,49 @@
 
       <section>
         <div class="container managers__container">
-          <div class="managers">
-            <picture>
-              <source
-                srcset="
-                  ./img/land/managers.jpg    1x,
-                  ./img/land/managers@2x.jpg 2x
-                "
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="
-                  ./img/tablet/managers.jpg    1x,
-                  ./img/tablet/managers@2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./img/mobile/managers.jpg    1x,
-                  ./img/mobile/managers@2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img src="./img/mobile/managers.jpg" alt="" />
-            </picture>
-          </div>
-          <div class="managers__box">
-            <h3 class="managers__subtitle">What you are looking for</h3>
-            <h2 class="managers__title">We provide bespoke solutions</h2>
-            <p class="managers__text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptate, ipsum dignissimos quae laudantium asperiores nam
-              aliquid impedit harum illum dolore explicabo ab dolores itaque
-              rerum temporibus doloribus iste maiores deleniti?
-            </p>
-            <button class="managers__btn button" type="button">
-              Read More
-            </button>
-          </div>
+          <ul class="managers__list">
+            <li class="managers__item item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/land/managers1x.jpg   1x,
+                    ./img/land/managers-@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/managers.jpg    1x,
+                    ./img/tablet/managers@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/managers.jpg    1x,
+                    ./img/mobile/managers@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./img/mobile/managers.jpg" alt="" />
+              </picture>
+            </li>
+            <li class="managers__item item">
+              <div class="managers__box">
+                <h3 class="managers__subtitle">What you are looking for</h3>
+                <h2 class="managers__title">We provide bespoke solutions</h2>
+                <p class="managers__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Voluptate, ipsum dignissimos quae laudantium asperiores nam
+                  aliquid impedit harum illum dolore explicabo ab dolores itaque
+                  rerum temporibus doloribus iste maiores deleniti?
+                </p>
+                <button class="managers__btn button" type="button">
+                  Read More
+                </button>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
