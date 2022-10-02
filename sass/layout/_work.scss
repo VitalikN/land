@@ -1,3 +1,11 @@
+.work {
+  padding: 48px 28px;
+}
+.work__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .work__list {
   display: flex;
   flex-direction: column;
@@ -8,15 +16,17 @@
   max-height: 647px;
   width: 100%;
   max-width: 1360px;
-  padding: 0 28px;
 }
 
 .work__subtitle {
+  margin-bottom: 15px;
   color: #333333;
 }
 .work__title {
+  margin-bottom: 34px;
   color: #333333;
 }
 .work__text {
+  margin-bottom: 39px;
   color: #333333;
 }
