@@ -3,11 +3,23 @@
     display: grid;
     height: 100%;
     width: 100%;
+    margin: 0 auto;
+
     place-items: center;
 
     background: #333333;
     border-radius: 0px;
     padding: 20px 0;
+    @media screen and (min-width: 320px) {
+      max-width: 320px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+
+    @media screen and (min-width: 1360px) {
+      max-width: 1360px;
+    }
   }
 
   .footer__btn {
@@ -15,7 +27,6 @@
     width: 60px;
     height: 60px;
 
-    margin-left: 5px;
     background: #fff;
     border-radius: 50px;
     cursor: pointer;
@@ -23,6 +34,9 @@
     transition: all 500ms ease-out;
     overflow: hidden;
     background-color: #333333;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
   }
 
   .footer__icon {
@@ -50,6 +64,9 @@
 
   .footer__btn:hover {
     width: 200px;
+    @media screen and (max-width: 767px) {
+      width: 60px;
+    }
   }
 
   .footer__btn:nth-child(1):hover .footer__icon {
