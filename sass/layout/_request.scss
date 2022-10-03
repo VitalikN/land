@@ -1,0 +1,15 @@
+.request {
+  display: flex;
+  background: #f4f4f4;
+  border-radius: 0px;
+}
+.request__box {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 30px;
+}
+
+.request__title {
+  color: #333333;
+  margin-bottom: 34px;
+}
