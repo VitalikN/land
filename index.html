@@ -620,19 +620,59 @@
             <img src="./img/mobile/Rectanglework.jpg" alt="" />
           </picture>
         </div>
-        <div class="request__box">
+
+        <form class="form">
           <h2 class="request__title managers__title">Request Callback</h2>
-          <label class="request__input"
-            ><input name="name" type="text" required
+          <label class="request__label"
+            ><input
+              class="request__input"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
           /></label>
-          <label class="request__input"
-            ><input name="mail" type="text" required
+          <label class="request__label"
+            ><input
+              class="request__input"
+              type="email"
+              name="mail"
+              placeholder="Enter email*"
+              required
           /></label>
-          <button type="button" class="button request__btn">Send</button>
-        </div>
+          <button class="button request__btn" type="submit">Send</button>
+        </form>
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__box">
+        <div class="footer__btn">
+          <div class="footer__icon">
+            <i class="fa fa-facebook footer__link"></i>
+          </div>
+          <span class="footer__text">Facebook</span>
+        </div>
+
+        <div class="footer__btn">
+          <div class="footer__icon">
+            <i class="fa fa-twitter footer__link"></i>
+          </div>
+          <span class="footer__text">Twitter</span>
+        </div>
+
+        <div class="footer__btn">
+          <div class="footer__icon">
+            <i class="fa fa-instagram footer__link"></i>
+          </div>
+          <span class="footer__text">Instagram</span>
+        </div>
+        <div class="footer__btn">
+          <div class="footer__icon">
+            <i class="fa fa-whatsapp footer__link"></i>
+          </div>
+          <span class="footer__text">Whatsapp</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
