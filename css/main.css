@@ -102,9 +102,10 @@ img {
 }
 .button {
   width: 165px;
-  height: 48px;
+  height: 50px;
   left: 597px;
   top: 436px;
+  box-sizing: border-box;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5555555556;
@@ -137,6 +138,12 @@ img {
     line-height: 1.625;
   }
 }
+.notebook__btn {
+  width: 196px;
+  background: #0284d0;
+  border: 1px solid #ffffff;
+}
+
 .overlay {
   width: 100%;
   left: 0px;
@@ -153,12 +160,12 @@ img {
   .overlay {
     max-width: 320px;
     max-height: 533px;
-    background-image: url("../img/mobile/rectangle1x.jpg");
+    background-image: url("../img/mobile/Rectangle1.jpg");
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .overlay {
-    background-image: url("../img/mobile/rectangle@2x.jpg");
+    background-image: url("../img/mobile/Rectangleimg@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -443,15 +450,10 @@ img {
     padding: 48px 28px;
   }
   .work__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
   }
   .work__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: block;
     row-gap: 7px;
     height: 100%;
     width: 100%;
@@ -485,5 +487,31 @@ img {
   .work__list {
     max-height: 647px;
     max-width: 1360px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .notebook__box {
+    background: #0284d0;
+    padding: 30px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .notebook__box {
+    padding-right: 39px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .notebook__box {
+    padding: 113px 0;
+    padding-left: 30px;
+    padding-right: 44px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .notebook__list {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=main.css.map */
