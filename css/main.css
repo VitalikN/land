@@ -60,14 +60,27 @@ img {
 
 .section {
   width: 100%;
-  max-width: 1360px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 320px) {
+  .section {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .section {
+    max-width: 1360px;
+  }
+}
 .container {
   width: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -80,13 +93,11 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 748px;
-    padding: 0 20px;
   }
 }
 @media screen and (min-width: 1360px) {
   .container {
     max-width: 1360px;
-    padding: 0;
   }
 }
 .button {
@@ -185,6 +196,7 @@ img {
     left: 0px;
     top: 0px;
     margin: 0 auto;
+    padding: 0 20px;
   }
   .header__icon {
     margin-right: 10px;
@@ -426,39 +438,52 @@ img {
     margin-bottom: 17px;
   }
 }
-.work {
-  padding: 48px 28px;
+@media screen and (min-width: 320px) {
+  .work {
+    padding: 48px 28px;
+  }
+  .work__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .work__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 7px;
+    height: 100%;
+    width: 100%;
+    max-width: 264px;
+  }
+  .work__subtitle {
+    margin-bottom: 15px;
+    color: #333333;
+  }
+  .work__title {
+    margin-bottom: 35px;
+    color: #333333;
+  }
+  .work__text {
+    margin-bottom: 38px;
+    color: #333333;
+  }
 }
-
-.work__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .work__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 7px;
+    column-gap: 8px;
+    max-width: 768px;
+    max-height: 237px;
+  }
 }
-
-.work__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  row-gap: 7px;
-  column-gap: 8px;
-  height: 100%;
-  width: 100%;
-  max-height: 647px;
-  max-width: 1360px;
-}
-
-.work__subtitle {
-  margin-bottom: 15px;
-  color: #333333;
-}
-
-.work__title {
-  margin-bottom: 34px;
-  color: #333333;
-}
-
-.work__text {
-  margin-bottom: 39px;
-  color: #333333;
+@media screen and (min-width: 1360px) {
+  .work__list {
+    max-height: 647px;
+    max-width: 1360px;
+  }
 }/*# sourceMappingURL=main.css.map */
