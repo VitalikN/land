@@ -30,7 +30,6 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -364,7 +363,6 @@ img {
 @media screen and (min-width: 320px) {
   .managers__container {
     width: 100%;
-    max-width: 320px;
     height: 100%;
     padding: 0;
   }
@@ -401,13 +399,13 @@ img {
 }
 @media screen and (min-width: 768px) {
   .managers__container {
-    max-width: 768px;
+    width: 768px;
   }
   .managers__list {
     display: flex;
   }
   .managers__item {
-    max-width: 384px;
+    width: 384px;
   }
   .managers__box {
     padding: 30px 0;
@@ -431,10 +429,10 @@ img {
 }
 @media screen and (min-width: 1360px) {
   .managers__container {
-    max-width: 1360px;
+    width: 1360px;
   }
   .managers__item {
-    max-width: 680px;
+    width: 680px;
   }
   .managers__box {
     padding: 84px 0;
